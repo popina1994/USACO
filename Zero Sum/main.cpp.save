@@ -1,0 +1,55 @@
+/*
+NAME:popina
+TASK:zerosum
+LANG:C++
+*/
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+int n, t[8], sign[3] = {' ', '+', '-'};
+
+int temp, counter;
+
+void DecadeToTrinary(int n, int t[]) {
+    temp = n;
+    counter = 0;
+    memset(t, 0, sizeof(t));
+    while (temp != 0) {
+        t[counter++] = temp % 3;
+        temp /= 3;
+    }
+}
+
+
+int main() {
+    freopen("zerosum.in", "r", stdin);
+    scanf("%d", &n);
+    int max = pow(3, n - 1), first, second, j, sig;
+    freopen("zerosum.out", "w", stdout);
+    for (int i = 0; i < max; i++) {
+        DecadeToTrinary(i, t);
+        for (j = 0, first = 1;j < n - 1 &&  t[j] == 0; j++)
+            first = first * 10 + j + 2;
+        while (j < n - 1){
+            second = j + 2, sig = t[j];
+            j++;
+            for (;j < n - 1 &&  t[j] == 0;j++)
+                second = second * 10 + j + 2;
+            if (sig == 1)
+                first += second;
+            else first -= second;
+        }
+        if (first == 0) {
+            for (int k = 0; k < n - 1; k++)
+                printf("%d%c", k + 1, sign[t[k]]);
+                printf("%d\n", n);
+        }
+    }
+    sor
+    return 0;
+}

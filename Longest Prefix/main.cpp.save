@@ -1,0 +1,58 @@
+/*
+NAME:popina
+TASK:prefix
+LANG:C++
+*/
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <climits>
+#include <set>
+
+using namespace std;
+
+typedef long long lld;
+
+const int MaxLength = 10, MaxListLength = 200, MaxSequenceLength = 2e6;
+
+char s[MaxListLength][MaxLength + 1], Sequence[MaxSequenceLength + 1];
+
+
+
+set <char*> s;
+
+
+
+int main() {
+    freopen("prefix.in", "r", stdin);
+    freopen("prefix.out", "w", stdout);
+    char c;
+    int StrCounter = 0, Counter = 0;
+    scanf("%c", &c);
+    while (c != '.') {
+        if (c == ' ') {
+            s[StrCounter++][Counter] = '\0';
+            Counter = 0;
+        } else if (c != '\n')
+            s[StrCounter][Counter++] =  c;
+        scanf ("%c", &c);
+    }
+    char TempS[77];
+    Counter = 0;
+    scanf("\n%c", &c);
+    for(int CounterNewLine = 0; CounterNewLine < 2; scanf("%c", &c)) {
+        if (c != '\n') {
+            TempS[Counter++] = c;
+            CounterNewLine = 0;
+        } else {
+            CounterNewLine++;
+            TempS[Counter] = '\0';
+            strcat(Sequence, TempS);
+            Counter = 0;
+        }
+    }
+    cout << LONG_LONG_MAX;
+
+
+    return 0;
+}

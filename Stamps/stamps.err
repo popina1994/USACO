@@ -1,0 +1,42 @@
+idx:0 val: 1
+idx:1 val: 3
+
+CurVal is: 1 Iterator is: 1 Counter is: 0
+CurVal is: 2 Iterator is: 1 Counter is: 1
+CurVal is: 3 Iterator is: 3 Counter is: 0
+CurVal is: 3 Iterator is: 1 Counter is: 2
+CurVal is: 4 Iterator is: 3 Counter is: 1
+CurVal is: 4 Iterator is: 1 Counter is: 1
+CurVal is: 5 Iterator is: 3 Counter is: 2
+CurVal is: 5 Iterator is: 1 Counter is: 2
+CurVal is: 6 Iterator is: 3 Counter is: 1
+CurVal is: 6 Iterator is: 1 Counter is: 3
+CurVal is: 7 Iterator is: 3 Counter is: 2
+CurVal is: 7 Iterator is: 1 Counter is: 2
+CurVal is: 8 Iterator is: 3 Counter is: 3
+CurVal is: 8 Iterator is: 1 Counter is: 3
+CurVal is: 9 Iterator is: 3 Counter is: 2
+CurVal is: 9 Iterator is: 1 Counter is: 4
+CurVal is: 10 Iterator is: 3 Counter is: 3
+CurVal is: 10 Iterator is: 1 Counter is: 3
+CurVal is: 11 Iterator is: 3 Counter is: 4
+CurVal is: 11 Iterator is: 1 Counter is: 4
+CurVal is: 12 Iterator is: 3 Counter is: 3
+CurVal is: 13 Iterator is: 3 Counter is: 4
+CurVal is: 13 Iterator is: 1 Counter is: 4
+idx:0 val: (0 0)
+idx:1 val: (1 1)
+idx:2 val: (2 2)
+idx:3 val: (3 1)
+idx:4 val: (4 2)
+idx:5 val: (5 3)
+idx:6 val: (6 2)
+idx:7 val: (7 3)
+idx:8 val: (8 4)
+idx:9 val: (9 3)
+idx:10 val: (10 4)
+idx:11 val: (11 5)
+idx:12 val: (12 4)
+idx:13 val: (13 5)
+idx:14 val: (14 2147483647)
+
