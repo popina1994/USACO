@@ -432,7 +432,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # specific to CodeBlocks IDE
-*.layoutlayout
+*.layout
 *.depend
 # generated directories
 bin/
